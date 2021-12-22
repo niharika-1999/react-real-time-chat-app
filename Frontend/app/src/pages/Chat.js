@@ -39,7 +39,7 @@ class Chat extends Component {
       room: this.props.match.params.room,
     };
 
-    socket = io("http://localhost:8080");
+    socket = io("https://niharika-chat-app.herokuapp.com/");
 
     socket.emit("join", params, function (err) {
       if (err) {

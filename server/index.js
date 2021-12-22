@@ -16,7 +16,7 @@ app.use(express.static(publicPath));
 app.use(cors());
 const io = socketio(server, {
     cors: {
-        origin: "http://localhost:3001",
+        origin: "https://niharika-chat-app.herokuapp.com/",
         mehtods: ["GET", "POST"],
     },
 }) ;
