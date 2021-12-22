@@ -23,6 +23,7 @@ const io = socketio(server, {
 
 // var io = socketio(server);
 var users = new Users();
+app.use(express.static(path.resolve(__dirname, "../Frontend/app/build")));
 
 io.on('connection', (socket) => {
 
